@@ -4,12 +4,18 @@ import java.io.IOException;
 
 public class InvocarOraculo {
     public static void main(String[] args) {
-        // Ejemplo de ejecución pasando nombre y pregunta con espacios
+        // cosas para que funcione en IntelliJ la ejecución
+        String classpath = System.getProperty("java.class.path");
+        String javaHome = System.getProperty("java.home") + "/bin/java";
+
+        // -cp es para especificar que estamos usando un .java y no un class
         ProcessBuilder pb = new ProcessBuilder(
-                "java",
-                "com.antonipei.tema01.Oraculo",
-                "paco",
-                "¿por que vuelan los cerdos?"
+                javaHome,
+                "-cp",
+                classpath,
+                "com.antonipeiro.tema01.Oraculo",
+                "andres",
+                "¿que estas haciendo?"
         );
 
         pb.inheritIO();

@@ -6,7 +6,8 @@ public class Oraculo {
             "Estas completamente equivocado.",
             "No estoy seguro totalmente.",
             "Me parece correcto.",
-            "Pregunta otra vez."
+            "Pregunta otra vez.",
+            "Me estoy unos macarrones"
     };
 
     public static void main(String[] args) {

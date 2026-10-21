@@ -1,29 +1,28 @@
-package com.antonipeiro.tema01;
+package com.antonipeiro.tema01.ejercicio4;
 
 import java.io.IOException;
 
-public class InvocarOraculo {
+public class ControlMision {
     public static void main(String[] args) {
-        // cosas para que funcione en IntelliJ la ejecución
+        // para que funcione en ejecucion
         String classpath = System.getProperty("java.class.path");
         String javaHome = System.getProperty("java.home") + "/bin/java";
 
-        // -cp es para especificar que estamos usando un .java y no un class
         ProcessBuilder pb = new ProcessBuilder(
                 javaHome,
                 "-cp",
                 classpath,
-                "com.antonipeiro.tema01.Oraculo",
-                "andres",
-                "¿que estas haciendo?"
+                "com.antonipeiro.tema01.ejercicio4.Starship",
+                "Alfa-7"
         );
 
+        // variable para el proceso hijo
+        pb.environment().put("PLANETA", "Marte");
         pb.inheritIO();
 
         try {
             Process proceso = pb.start();
-            int codigoSalida = proceso.waitFor();
-            System.out.println("el proceso hijo terminó: " + codigoSalida);
+            proceso.waitFor();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }

@@ -1,4 +1,4 @@
-package com.antonipeiro.tema01;
+package com.antonipeiro.tema01.ejercicio1;
 
 import java.time.Instant;
 

@@ -1,4 +1,4 @@
-package com.antonipeiro.tema01;
+package com.antonipeiro.tema01.ejercicio4;
 
 public class Starship {
     public static void main(String[] args) {

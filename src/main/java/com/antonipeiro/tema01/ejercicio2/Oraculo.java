@@ -1,4 +1,4 @@
-package com.antonipeiro.tema01;
+package com.antonipeiro.tema01.ejercicio2;
 
 public class Oraculo {
     private static final String[] EXCUSAS = {

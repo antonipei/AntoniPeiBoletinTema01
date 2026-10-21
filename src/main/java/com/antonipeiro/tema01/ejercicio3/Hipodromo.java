@@ -1,4 +1,4 @@
-package com.antonipeiro.tema01;
+package com.antonipeiro.tema01.ejercicio3;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,9 +9,9 @@ public class Hipodromo {
         String javaHome = System.getProperty("java.home") + "/bin/java";
 
         List<ProcessBuilder> procesos = List.of(
-                new ProcessBuilder(javaHome, "-cp", classpath, "com.antonipeiro.tema01.Mascota", "tortuga", "5"),
-                new ProcessBuilder(javaHome, "-cp", classpath, "com.antonipeiro.tema01.Mascota", "liebre", "5"),
-                new ProcessBuilder(javaHome, "-cp", classpath, "com.antonipeiro.tema01.Mascota", "perro", "5")
+                new ProcessBuilder(javaHome, "-cp", classpath, "com.antonipeiro.tema01.ejercicio3.Mascota", "tortuga", "5"),
+                new ProcessBuilder(javaHome, "-cp", classpath, "com.antonipeiro.tema01.ejercicio3.Mascota", "liebre", "5"),
+                new ProcessBuilder(javaHome, "-cp", classpath, "com.antonipeiro.tema01.ejercicio3.Mascota", "perro", "5")
         );
 
         try {

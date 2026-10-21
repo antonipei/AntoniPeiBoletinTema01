@@ -1,4 +1,4 @@
-package com.antonipeiro.tema01;
+package com.antonipeiro.tema01.ejercicio3;
 
 public class Mascota {
     public static void main(String[] args) {
